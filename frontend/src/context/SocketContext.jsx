@@ -14,7 +14,7 @@ export function SocketProvider({ children }) {
     const token = localStorage.getItem('token');
     if (!user || !token) return;
 
-    const socket = io('/', { auth: { token } });
+    const socket = io(import.meta.env.VITE_API_URL || '/', { auth: { token } });
     socketRef.current = socket;
 
     socket.on('connect', () => {
