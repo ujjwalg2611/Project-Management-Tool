@@ -40,9 +40,9 @@ export default function Login() {
         <p style={{ fontSize: 13, textAlign: 'center', marginTop: 16, color: 'var(--text-dim)' }}>
           No account? <Link to="/register">Sign up</Link>
         </p>
-        <p style={{ fontSize: 12, textAlign: 'center', color: 'var(--text-dim)' }}>
+        {/* <p style={{ fontSize: 12, textAlign: 'center', color: 'var(--text-dim)' }}>
           Demo: demo@example.com / password123 (after running <code>npm run seed</code>)
-        </p>
+        </p> */}
       </form>
     </div>
   );
